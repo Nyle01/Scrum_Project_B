@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Index.aspx.cs" Inherits="Scrum_Project_B.Index" %>
+﻿<%@ Page Language="C#" AutoEventWireup="True" CodeBehind="Index.aspx.cs" Inherits="Scrum_Project_B.Index" %>
 
 <!DOCTYPE html>
 
