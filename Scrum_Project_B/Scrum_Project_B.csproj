@@ -64,6 +64,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="design\login.css" />
     <Content Include="login.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
