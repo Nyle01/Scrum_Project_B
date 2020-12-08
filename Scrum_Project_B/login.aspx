@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="default.aspx.cs" Inherits="Scrum_Project_B._default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="login.aspx.cs" Inherits="Scrum_Project_B._default" %>
 
 <!DOCTYPE html>
 
@@ -26,7 +26,7 @@
         <div class="checkbox">
             <asp:CheckBox ID="chkRememberMe" Text="Remember Me" runat="server" />
         </div>
-        <asp:Button ID="btnLogin" Text="Login" runat="server" OnClick="ValidateUser" Class="btn btn-primary" />
+        <asp:Button ID="btnLogin" Text="Login" runat="server" Class="btn btn-primary" />
         <br />
         <br />
         <div id="dvMessage" runat="server" visible="false" class="alert alert-danger">
