@@ -9,18 +9,18 @@
             string firstname;
             string lastname;
             string email;
-            string classOrCompany;
+            string organsisation;
             string password;
             #endregion
 
             #region Konstruktor
-            public UserData(string _authentificator, string _firstname, string _lastname, string _email, string _classOrCompany, string _password)
+            public UserData(string _authentificator, string _firstname, string _lastname, string _email, string _organsisation, string _password)
             {
                 authentificator = _authentificator;
                 firstname = _firstname;
                 lastname = _lastname;
                 email = _email;
-                classOrCompany = _classOrCompany;
+                organsisation = _organsisation;
                 password = _password;
             }
             #endregion
@@ -42,15 +42,17 @@
             {
                 get { return email; }
             }
-            public string ClassOrCompany
+            public string Organsisation
             {
-                get { return classOrCompany; }
+                get { return organsisation; }
             }
             public string Password
             {
                 get { return password; }
             }
             #endregion
+
+
         }
     }
 }
