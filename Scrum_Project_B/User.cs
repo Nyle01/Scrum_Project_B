@@ -17,9 +17,9 @@ namespace Scrum_Project_B
         #endregion
 
         #region Konstruktor
-        public UserData(string _authentificator, string _firstname, string _lastname, string _email, string _organsisation, string _password)
+        public User( string _firstname, string _lastname, string _email, string _organsisation, string _password)
         {
-            authentificator = _authentificator;
+         
             firstname = _firstname;
             lastname = _lastname;
             email = _email;
