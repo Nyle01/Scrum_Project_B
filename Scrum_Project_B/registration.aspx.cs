@@ -5,6 +5,7 @@ using System.Net.Mail;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using static Scrum_Project_B._default;
 
 namespace Scrum_Project_B
 {
@@ -39,8 +40,14 @@ namespace Scrum_Project_B
                 
             }
 
-
-            
         }
+        public static void WriteDB(UserData userData)
+        {
+            //// Hash
+            string hashedPassword = SecurePasswordHasher.Hash(userData.Password);
+
+        }
+        //// Verify
+        //var result = SecurePasswordHasher.Verify("mypassword", hash);
     }
 }
