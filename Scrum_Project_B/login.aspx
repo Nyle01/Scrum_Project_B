@@ -30,7 +30,7 @@
         <div class="checkbox">
             <asp:CheckBox ID="chkRememberMe" Text="Remember Me" runat="server" />
         </div>
-        <asp:Button ID="btnLogin" Text="Login" runat="server" Class="btn btn-primary" />
+        <asp:Button ID="btnLogin" Text="Login" runat="server" Class="btn btn-primary" OnClick="btnLogin_Click" />
         <br />
         <br />
         <div id="dvMessage" runat="server" visible="false" class="alert alert-danger">
