@@ -5,7 +5,6 @@ using System.Net.Mail;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using static Scrum_Project_B._default;
 
 namespace Scrum_Project_B
 {
@@ -15,12 +14,6 @@ namespace Scrum_Project_B
         {
 
         }
-
-        protected void Button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         protected void CustomValidator1_ServerValidate(object source, ServerValidateEventArgs args)
         {
             bool isValid= false;
@@ -37,17 +30,40 @@ namespace Scrum_Project_B
             {
                 args.IsValid = false;
                 ValidEmailValidator.Text = "Email format is not Valid!";
-                
             }
-
         }
-        public static void WriteDB(UserData userData)
+        public static void WriteDB(User user)
         {
             //// Hash
-            string hashedPassword = SecurePasswordHasher.Hash(userData.Password);
-
+            string hashedPassword = SecurePasswordHasher.Hash(user.Password);
+            string authentificator = GetAuthentificator(user.Firstname, user.Lastname);
         }
-        //// Verify
+        //Verify
         //var result = SecurePasswordHasher.Verify("mypassword", hash);
+        public static string GetAuthentificator(string firstname, string lastname)
+        {
+            string p1;
+            string p2;
+            p1 = lastname.Substring(0, 3);
+            p2 = firstname[0].ToString();
+
+            return $"{p1}{p2}".ToUpper();
+        }
+
+        protected void btnSignUp_Click(object sender, EventArgs e)
+        {
+            if (TxtbxPassw.Text.Equals(TxtbxPasswRep.Text))
+            {
+                User user = new User(txtbxFirstName.Text, txtbxLastName.Text, TxtbxEmail.Text, TxtbxOrganisation.Text, TxtbxPassw.Text);
+                WriteDB(user);
+                lblTest.Text = GetAuthentificator(txtbxFirstName.Text, txtbxLastName.Text);
+            }
+            else
+            {
+                RequiredFieldValidatorRepeatPassword.Text = "Passwords do NOT match!";
+            }
+        }
+
     }
+
 }

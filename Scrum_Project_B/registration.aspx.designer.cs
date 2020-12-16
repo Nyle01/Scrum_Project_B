@@ -42,13 +42,13 @@ namespace Scrum_Project_B
         protected global::System.Web.UI.WebControls.Label Label2;
 
         /// <summary>
-        /// txtbxName control.
+        /// txtbxFirstName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtbxName;
+        protected global::System.Web.UI.WebControls.TextBox txtbxFirstName;
 
         /// <summary>
         /// RequiredFieldValidator1 control.
@@ -69,13 +69,13 @@ namespace Scrum_Project_B
         protected global::System.Web.UI.WebControls.Label Label6;
 
         /// <summary>
-        /// txtbxName0 control.
+        /// txtbxLastName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtbxName0;
+        protected global::System.Web.UI.WebControls.TextBox txtbxLastName;
 
         /// <summary>
         /// RequiredFieldValidator5 control.
@@ -132,22 +132,22 @@ namespace Scrum_Project_B
         protected global::System.Web.UI.WebControls.Label Label4;
 
         /// <summary>
-        /// TxtbsPassw control.
+        /// TxtbxPassw control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtbsPassw;
+        protected global::System.Web.UI.WebControls.TextBox TxtbxPassw;
 
         /// <summary>
-        /// RequiredFieldValidator3 control.
+        /// RequiredFieldValidatorPasswordNotEntered control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator3;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidatorPasswordNotEntered;
 
         /// <summary>
         /// Label5 control.
@@ -159,22 +159,22 @@ namespace Scrum_Project_B
         protected global::System.Web.UI.WebControls.Label Label5;
 
         /// <summary>
-        /// TxtbsPasswRep control.
+        /// TxtbxPasswRep control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtbsPasswRep;
+        protected global::System.Web.UI.WebControls.TextBox TxtbxPasswRep;
 
         /// <summary>
-        /// RequiredFieldValidator4 control.
+        /// RequiredFieldValidatorRepeatPassword control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator4;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidatorRepeatPassword;
 
         /// <summary>
         /// Label7 control.
@@ -186,30 +186,39 @@ namespace Scrum_Project_B
         protected global::System.Web.UI.WebControls.Label Label7;
 
         /// <summary>
-        /// TxtbsPasswRep0 control.
+        /// TxtbxOrganisation control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtbsPasswRep0;
+        protected global::System.Web.UI.WebControls.TextBox TxtbxOrganisation;
 
         /// <summary>
-        /// RequiredFieldValidator6 control.
+        /// RequiredFieldValidatorNoOragnisationEntered control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator6;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidatorNoOragnisationEntered;
 
         /// <summary>
-        /// Button1 control.
+        /// btnSignUp control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.WebControls.Button btnSignUp;
+
+        /// <summary>
+        /// lblTest control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblTest;
     }
 }

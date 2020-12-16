@@ -18,17 +18,17 @@
             <asp:Label ID="Label2" runat="server" ForeColor="#999999" Text="Firstname"></asp:Label>
         </p>
         <p style="margin-left: 120px">
-            <asp:TextBox ID="txtbxName" runat="server" Width="380px"></asp:TextBox>
+            <asp:TextBox ID="txtbxFirstName" runat="server" Width="380px"></asp:TextBox>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtbxName" EnableClientScript="False" ErrorMessage="Please enter your Firstname"></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtbxFirstName" EnableClientScript="False" ErrorMessage="Please enter your Firstname"></asp:RequiredFieldValidator>
         </p>
         <p style="margin-left: 120px">
             <asp:Label ID="Label6" runat="server" ForeColor="#999999" Text="Lastname"></asp:Label>
         </p>
         <p style="margin-left: 120px">
-            <asp:TextBox ID="txtbxName0" runat="server" Width="380px"></asp:TextBox>
+            <asp:TextBox ID="txtbxLastName" runat="server" Width="380px"></asp:TextBox>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="txtbxName" EnableClientScript="False" ErrorMessage="Please enter your Lastname"></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="txtbxLastName" EnableClientScript="False" ErrorMessage="Please enter your Lastname"></asp:RequiredFieldValidator>
         </p>
         <p style="margin-left: 120px">
             <asp:Label ID="Label3" runat="server" ForeColor="#999999" Text="Email"></asp:Label>
@@ -44,33 +44,34 @@
             <asp:Label ID="Label4" runat="server" ForeColor="#999999" Text="Password"></asp:Label>
         </p>
         <p style="margin-left: 120px">
-            <asp:TextBox ID="TxtbsPassw" runat="server" Width="380px"></asp:TextBox>
+            <asp:TextBox ID="TxtbxPassw" runat="server" Width="380px"></asp:TextBox>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="TxtbsPassw" EnableClientScript="False" ErrorMessage="Please enter a Password"></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidatorPasswordNotEntered" runat="server" ControlToValidate="TxtbxPassw" EnableClientScript="False" ErrorMessage="Please enter a Password"></asp:RequiredFieldValidator>
         </p>
         <p style="margin-left: 120px">
             <asp:Label ID="Label5" runat="server" ForeColor="#999999" Text="Repeat your password"></asp:Label>
         </p>
         <p style="margin-left: 120px">
-            <asp:TextBox ID="TxtbsPasswRep" runat="server" Width="380px"></asp:TextBox>
+            <asp:TextBox ID="TxtbxPasswRep" runat="server" Width="380px"></asp:TextBox>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="TxtbsPasswRep" EnableClientScript="False" ErrorMessage="Please repeat your password"></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidatorRepeatPassword" runat="server" ControlToValidate="TxtbxPasswRep" EnableClientScript="False" ErrorMessage="Please repeat your password"></asp:RequiredFieldValidator>
         </p>
         <p style="margin-left: 120px">
             <asp:Label ID="Label7" runat="server" ForeColor="#999999" Text="Organisation"></asp:Label>
         </p>
         <p style="margin-left: 120px">
-            <asp:TextBox ID="TxtbsPasswRep0" runat="server" Width="380px"></asp:TextBox>
+            <asp:TextBox ID="TxtbxOrganisation" runat="server" Width="380px"></asp:TextBox>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="txtbxName" EnableClientScript="False" ErrorMessage="Please enter your organisation"></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidatorNoOragnisationEntered" runat="server" ControlToValidate="TxtbxOrganisation" EnableClientScript="False" ErrorMessage="Please enter your organisation"></asp:RequiredFieldValidator>
         </p>
         <p style="margin-left: 120px">
             &nbsp;</p>
         <p style="margin-left: 120px">
-            <asp:Button ID="Button1" runat="server" Font-Size="Medium" ForeColor="#000099" Text="SIGN UP" Width="377px" OnClick="Button1_Click" />
+            <asp:Button ID="btnSignUp" runat="server" Font-Size="Medium" ForeColor="#000099" Text="SIGN UP" Width="377px" OnClick="btnSignUp_Click" />
         </p>
         <p>
-            &nbsp;</p>
+            <asp:Label ID="lblTest" runat="server" Text="Label"></asp:Label>
+        </p>
     </form>
 </body>
 </html>
