@@ -1,0 +1,54 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Scrum_Project_B.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>StartPage</title>
+    <link href="StyleSheetMasterPage.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class ="Header">
+            HeaderPlaceHolder
+            </div>
+
+        <div class ="Navigation">
+            NaviPlaceHolder
+            <asp:Button ID="btn" runat="server" Text="Button" Width="100px" />
+            <br />
+            <br />
+            <asp:Button ID="Button2" runat="server" Text="Button" Width="100px" />
+        </div>
+
+        <div class="PageContent">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <div class ="Footer">
+            FooterPlaceHolder<br />
+&nbsp;<asp:Label ID="lblVersion" runat="server"></asp:Label>
+            <br />
+        </div>
+
+        <div class ="Login">
+            
+            <asp:Button ID="btnLogin" runat="server" Height="37px" Text="Log in" Width="102px" />
+            <br />
+            <asp:Label ID="lblLoggedInName" runat="server"></asp:Label>
+            
+        </div>
+
+        <div class ="DataPrivacyInfo">
+            
+            <asp:Button ID="btnDataPrivacyInfo" runat="server" Height="46px" Text="Impressum (Datenschutz)" Width="159px" />
+            
+        </div>
+
+
+    </form>
+</body>
+</html>
